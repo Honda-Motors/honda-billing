@@ -48,7 +48,7 @@ This will concurrently start the backend server and frontend development server.
 
 The frontend development server will be accessible at: `http://localhost:3000`.
 
-The backend server will be accessible at: `http://localhost:8000`.
+The backend server will be accessible at: `http://localhost:5000`.
 
 ### Building the Application
 
