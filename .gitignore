@@ -1,4 +1,5 @@
 node_modules/
+# billing-state-backend/src/config/config.env   
 
 /node_modules
 /.pnp
@@ -9,7 +10,7 @@ node_modules/
 /dist
 # production
 /build
-
+/.env
 # misc
 .DS_Store
 .env.local
