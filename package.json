@@ -1,0 +1,21 @@
+{
+  "name": "honda-billing",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "billing-state-frontend",
+    "billing-state-backend"
+  ],
+  "scripts": {
+    "client": "yarn --cwd billing-state-frontend dev",
+    "server": "yarn --cwd billing-state-backend dev",
+    "start": "npm --cwd backend start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build-app": "yarn install  && yarn --cwd frontend run build "
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
