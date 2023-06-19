@@ -11,6 +11,7 @@ To get started with the Honda Billing project, follow these steps:
 1. Clone the repository:
 
 ```
+
 git clone https://github.com/your-username/honda-billing.git
 
 ```
@@ -70,8 +71,4 @@ The project follows a monorepo-style structure using Yarn workspaces. It consist
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-```
-
-```
+This project is licensed under the MIT License
