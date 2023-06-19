@@ -1,6 +1,4 @@
 node_modules/
-xavier-backend/node_modules/
-xavier-backend/config/config.env   
 
 /node_modules
 /.pnp
@@ -15,6 +13,7 @@ xavier-backend/config/config.env
 # misc
 .DS_Store
 .env.local
+config.env
 .env.development.local
 .env.test.local
 .env.production.local

@@ -1,6 +1,4 @@
 node_modules/
-xavier-backend/node_modules/
-xavier-backend/config/config.env   
 
 /node_modules
 /.pnp
