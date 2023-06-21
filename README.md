@@ -26,6 +26,15 @@ cd honda-billing
 yarn install
 ```
 
+### Genrate .env for backend
+
+```
+cd honda-billing/billing-state-backend
+
+yarn run generate:env
+
+```
+
 ## Usage
 
 ### Development Mode
@@ -35,13 +44,13 @@ To run the project in development mode using Docker, follow these steps:
 1. Build the Docker images:
 
 ```
-docker-compose -f docker-compose.yml -f docker-compose.dev.yml build
+docker compose -f docker-compose.dev.yml build
 ```
 
 2. Start the containers:
 
 ```
-docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+docker compose -f docker-compose.dev.yml up
 ```
 
 The frontend development server will be accessible at: `http://localhost:3000`.
@@ -104,7 +113,3 @@ The project follows a monorepo-style structure using Yarn workspaces. It consist
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-```

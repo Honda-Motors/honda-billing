@@ -6,7 +6,7 @@ let url =
   process.env.NODE_ENV === "production"
     ? process.env.MONGO_URL
     : process.env.MONGO_DEV_URL;
-
+console.log(process.env.MONGO_URL);
 mongoose
   .connect(url, {
     useNewUrlParser: true,

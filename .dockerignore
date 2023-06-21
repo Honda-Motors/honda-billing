@@ -1,0 +1,11 @@
+# Exclude specific files
+.git
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Exclude directories
+logs
+tmp
+dist

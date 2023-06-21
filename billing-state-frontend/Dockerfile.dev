@@ -2,19 +2,21 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /app/billing-state-frontend
 
-# Copy the package.json and package-lock.json files to the container
-COPY billing-state-frontend/package*.json ./
+# Copy the package.json and yarn.lock files to the container
+COPY package*.json yarn.lock ./
 
-# Install the dependencies
-RUN npm install
+# Install Yarn globally
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
-# Copy the rest of the frontend application code to the container
-COPY billing-state-frontend ./
+# Install project dependencies using Yarn
+RUN yarn --verbose
 
-# Expose the port on which the frontend server will run
+COPY . .
+
+# Expose the port on which the backend server will run
 EXPOSE 3000
 
-# Start the frontend server in development mode
-CMD ["npm", "run", "dev"]
+# Start the backend server
+CMD ["yarn","run","dev"]
